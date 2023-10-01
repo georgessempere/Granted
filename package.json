@@ -1,15 +1,23 @@
 {
   "name": "granted",
-  "version": "1.0.50",
+  "version": "0.0.1",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "dev": "concurrently \"bun run tailwindcss -i ./src/templates/style.css -o ./public/style.css --watch\" \"bun --watch src/index.tsx\""
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/html": "^0.7.0",
+    "@elysiajs/static": "^0.7.1",
+    "drizzle": "^1.4.0",
+    "elysia": "latest",
+    "htmx": "^0.0.2",
+    "tailwindcss": "^3.3.3",
+    "typed-html": "^3.0.1",
+    "zod": "^3.22.2"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "concurrently": "^8.2.1"
   },
   "module": "src/index.js"
 }
