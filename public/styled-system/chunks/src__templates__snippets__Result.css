@@ -1,0 +1,14 @@
+@layer utilities {
+
+  .text_center {
+    text-align: center
+    }
+
+  .fs_2xl {
+    font-size: var(--font-sizes-2xl)
+    }
+
+  .text_sky\.400 {
+    color: var(--colors-sky-400)
+    }
+}

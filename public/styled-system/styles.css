@@ -1,0 +1,135 @@
+@layer reset, base, tokens, recipes, utilities;
+
+@import './reset.css';
+
+@import './global.css';
+
+@import './tokens/index.css';
+
+@import './tokens/keyframes.css';
+
+@layer utilities {
+  .fs_5xl {
+    font-size: var(--font-sizes-5xl)
+    }
+
+  .leading_5xl {
+    line-height: 5xl
+    }
+
+  .border_sky\.600 {
+    border-color: var(--colors-sky-600)
+    }
+
+  .p_2\,_4\,_2\,_4 {
+    padding: 2, 4, 2, 4
+    }
+
+  .p_2_4_2_4 {
+    padding: 2 4 2 4
+    }
+
+  .p_2px_4px_2px_4px {
+    padding: 2px 4px 2px 4px
+    }
+
+  .p_1em_2em_1em_2em {
+    padding: 1em 2em 1em 2em
+    }
+
+  .p_5 {
+    padding: var(--spacing-5)
+    }
+
+  .px_5 {
+    padding-inline: var(--spacing-5)
+    }
+
+  .self_center {
+    align-self: center
+    }
+
+  .rounded_full {
+    border-radius: var(--radii-full)
+    }
+
+  .rounded_rounded {
+    border-radius: rounded
+    }
+
+  .pt_2 {
+    padding-top: var(--spacing-2)
+    }
+
+  .pb_2 {
+    padding-bottom: var(--spacing-2)
+    }
+
+  .pl_4 {
+    padding-left: var(--spacing-4)
+    }
+
+  .pr_4 {
+    padding-right: var(--spacing-4)
+    }
+
+  .border-width_1px {
+    border-width: 1px
+    }
+
+  .border_sky\.400 {
+    border-color: var(--colors-sky-400)
+    }
+
+  .w_full {
+    width: var(--sizes-full)
+    }
+
+  .mb_4 {
+    margin-bottom: var(--spacing-4)
+    }
+
+  .bg_sky\.400 {
+    background-color: var(--colors-sky-400)
+    }
+
+  .text_white {
+    color: var(--colors-white)
+    }
+
+  .font_bold {
+    font-weight: var(--font-weights-bold)
+    }
+
+  .px_4 {
+    padding-inline: var(--spacing-4)
+    }
+
+  .py_2 {
+    padding-block: var(--spacing-2)
+    }
+
+  .mx_auto {
+    margin-inline: auto
+    }
+
+  .rounded_2xl {
+    border-radius: var(--radii-2xl)
+    }
+
+  .text_center {
+    text-align: center
+    }
+
+  .fs_2xl {
+    font-size: var(--font-sizes-2xl)
+    }
+
+  .text_sky\.400 {
+    color: var(--colors-sky-400)
+    }
+
+  .hover\:bg_sky\.500:is(:hover, [data-hover]) {
+    background-color: var(--colors-sky-500)
+        }
+}
